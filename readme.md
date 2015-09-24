@@ -9,7 +9,7 @@
 * Automagically deploy the `dist` folder to [Force.com](https://developer.force.com)
 * CSS Autoprefixing
 * Built-in preview server with LiveReload
-* Automagically compile CoffeeScript & Sass
+* Automagically compile ES6 (with Babel) & Sass
 * Automagically lint your scripts
 * Automagically wire up your Bower components with [grunt-wiredep](#third-party-dependencies).
 * Awesome Image Optimization (via OptiPNG, pngquant, jpegtran and gifsicle)
@@ -66,12 +66,11 @@ We have [recipes](docs/recipes) for integrating other popular technologies like 
 
 * `--test-framework=<framework>`
 
-  Defaults to `mocha`. Can be switched for another supported testing framework like `jasmine`.
+  Either `mocha` or `jasmine`. Defaults to `mocha`.
 
-* `--coffee`
+* `--no-babel`
 
-  Add support for [CoffeeScript](http://coffeescript.org/).
-
+  Turn off [Babel](http://babeljs.io/) support.
 
 ## Contribute
 
